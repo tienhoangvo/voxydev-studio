@@ -53,6 +53,12 @@ const commentSchema = {
         },
       ],
     },
+
+    {
+      name: "createdAt",
+      title: "Created At",
+      type: "datetime",
+    },
   ],
 };
 
