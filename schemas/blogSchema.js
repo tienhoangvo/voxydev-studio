@@ -147,10 +147,27 @@ const blogSchema = {
         layout: "tags",
       },
     },
+    {
+      name: "comments",
+      title: "Comments",
+      type: "array",
+
+      of: [
+        {
+          type: "reference",
+          weak: true,
+          to: [
+            {
+              type: "comment",
+            },
+          ],
+        },
+      ],
+    },
 
     {
       name: "commentsQuantity",
-      title: "commentsQuantity",
+      title: "Comments Quantity",
       type: "number",
       initialValue: 0,
     },

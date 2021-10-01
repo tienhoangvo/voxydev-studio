@@ -41,10 +41,11 @@ const commentSchema = {
       name: "replies",
       title: "Replies",
       type: "array",
-      readOnly: true,
+
       of: [
         {
           type: "reference",
+          weak: true,
           to: [
             {
               type: "reply",
