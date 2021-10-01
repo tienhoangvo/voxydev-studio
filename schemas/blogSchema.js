@@ -147,6 +147,13 @@ const blogSchema = {
         layout: "tags",
       },
     },
+
+    {
+      name: "commentsQuantity",
+      title: "commentsQuantity",
+      type: "number",
+      initialValue: 0,
+    },
   ],
 };
 

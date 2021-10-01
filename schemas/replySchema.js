@@ -26,15 +26,10 @@ const replySchema = {
     {
       name: "repliedTo",
       title: "Replied To",
-      type: "array",
-      of: [
+      type: "reference",
+      to: [
         {
-          type: "reference",
-          to: [
-            {
-              type: "user",
-            },
-          ],
+          type: "user",
         },
       ],
     },
@@ -42,6 +37,11 @@ const replySchema = {
       name: "content",
       title: "Content",
       type: "text",
+    },
+    {
+      name: "createdAt",
+      title: "Created At",
+      type: "datetime",
     },
   ],
 };

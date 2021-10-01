@@ -55,6 +55,13 @@ const commentSchema = {
     },
 
     {
+      name: "repliesQuantity",
+      title: "Number of replies",
+      type: "number",
+      initialValue: 0,
+    },
+
+    {
       name: "createdAt",
       title: "Created At",
       type: "datetime",
