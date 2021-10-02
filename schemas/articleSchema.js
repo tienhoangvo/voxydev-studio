@@ -1,7 +1,7 @@
-const blogSchema = {
-  name: "blog",
+const articleSchema = {
+  name: "article",
   type: "document",
-  title: "Blog",
+  title: "Articles",
   fields: [
     {
       name: "title",
@@ -9,9 +9,9 @@ const blogSchema = {
       title: "Title",
     },
     {
-      name: "subheader",
-      type: "string",
-      title: "Subheader",
+      name: "excerpt",
+      type: "text",
+      title: "Excerpt",
     },
     {
       name: "content",
@@ -99,8 +99,8 @@ const blogSchema = {
       },
     },
     {
-      title: "Created At",
-      name: "createdAt",
+      title: "Published At",
+      name: "publishedAt",
       type: "datetime",
     },
     {
@@ -174,4 +174,4 @@ const blogSchema = {
   ],
 };
 
-export default blogSchema;
+export default articleSchema;

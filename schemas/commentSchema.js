@@ -20,7 +20,7 @@ const commentSchema = {
       type: "reference",
       to: [
         {
-          type: "blog",
+          type: "article",
         },
       ],
     },

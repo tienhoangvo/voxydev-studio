@@ -9,20 +9,28 @@ const categorySchema = {
       type: "string",
     },
     {
+      name: "tag",
+      title: "Tag",
+      type: "string",
+    },
+    {
       name: "coverImage",
       title: "Cover Image",
       type: "image",
     },
     {
-      name: "exerpt",
-      title: "Exerpt",
+      name: "description",
+      title: "Description",
       type: "text",
     },
     {
-      name: "description",
-      title: "Description",
-      type: "array",
-      of: [{ type: "block" }],
+      name: "slug",
+      title: "Slug",
+      type: "slug",
+      options: {
+        source: "title",
+        maxLength: 200,
+      },
     },
   ],
 };

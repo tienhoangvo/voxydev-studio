@@ -1,7 +1,7 @@
 const authorSchema = {
   name: "author",
   type: "document",
-  title: "Author",
+  title: "Authors",
   fields: [
     {
       name: "name",

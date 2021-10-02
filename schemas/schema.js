@@ -4,12 +4,13 @@ import createSchema from "part:@sanity/base/schema-creator";
 // Then import schema types from any plugins that might expose them
 import schemaTypes from "all:part:@sanity/base/schema-type";
 import authorSchema from "./authorSchema";
-import blogSchema from "./blogSchema";
+
 import videoSchema from "./videoSchema";
 import userSchema from "./userSchema";
 import categorySchema from "./categorySchema";
 import commentSchema from "./commentSchema";
 import replySchema from "./replySchema";
+import articleSchema from "./articleSchema";
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -20,10 +21,10 @@ export default createSchema({
   types: schemaTypes.concat([
     authorSchema,
     categorySchema,
-    blogSchema,
     videoSchema,
     userSchema,
     commentSchema,
     replySchema,
+    articleSchema,
   ]),
 });
