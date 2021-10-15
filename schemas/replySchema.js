@@ -4,6 +4,22 @@ const replySchema = {
   type: "document",
   fields: [
     {
+      name: "content",
+      title: "Content",
+      type: "text",
+    },
+    {
+      name: "createdAt",
+      title: "Created At",
+      type: "datetime",
+    },
+    {
+      title: "Approved",
+      name: "approved",
+      type: "boolean",
+      description: "Approve this comment?",
+    },
+    {
       name: "user",
       title: "User",
       type: "reference",
@@ -32,16 +48,6 @@ const replySchema = {
           type: "user",
         },
       ],
-    },
-    {
-      name: "content",
-      title: "Content",
-      type: "text",
-    },
-    {
-      name: "createdAt",
-      title: "Created At",
-      type: "datetime",
     },
   ],
 };

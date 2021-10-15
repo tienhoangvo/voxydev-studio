@@ -4,6 +4,16 @@ const commentSchema = {
   title: "Comments",
   fields: [
     {
+      name: "content",
+      title: "Content",
+      type: "text",
+    },
+    {
+      name: "createdAt",
+      title: "Created At",
+      type: "datetime",
+    },
+    {
       name: "user",
       title: "User",
       type: "reference",
@@ -26,15 +36,10 @@ const commentSchema = {
     },
 
     {
-      title: "Disapproved",
-      name: "disapproved",
+      title: "Approved",
+      name: "approved",
       type: "boolean",
-      description: "Comments won't show on the site without approval",
-    },
-    {
-      name: "content",
-      title: "Content",
-      type: "text",
+      description: "Approve this comment?",
     },
 
     {
@@ -60,12 +65,6 @@ const commentSchema = {
       title: "Number of replies",
       type: "number",
       initialValue: 0,
-    },
-
-    {
-      name: "createdAt",
-      title: "Created At",
-      type: "datetime",
     },
   ],
 };
