@@ -19,9 +19,9 @@ const videoSchema = {
       title: "Thumbnail",
     },
     {
-      name: "videoURL",
-      type: "string",
-      title: "VideosURL",
+      name: "video",
+      type: "youtube",
+      title: "Video",
     },
   ],
 };

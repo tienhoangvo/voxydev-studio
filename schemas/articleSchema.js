@@ -21,6 +21,7 @@ const articleSchema = {
         {
           type: "block",
         },
+        { type: "youtube" },
         {
           type: "image",
           fields: [
