@@ -25,6 +25,20 @@ const commentSchema = {
     },
 
     {
+      name: "userData",
+      title: "User Data",
+      type: "object",
+      fields: [
+        { name: "id", title: "ID", type: "string" },
+        {
+          name: "name",
+          type: "string",
+          title: "Name",
+        },
+        { name: "avatar", title: "Avatar", type: "url" },
+      ],
+    },
+    {
       name: "article",
       title: "Article",
       type: "reference",
