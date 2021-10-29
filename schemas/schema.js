@@ -12,6 +12,7 @@ import commentSchema from "./commentSchema";
 import replySchema from "./replySchema";
 import articleSchema from "./articleSchema";
 import youtubeSchema from "./youtubeSchema";
+import contactSchema from "./contactSchema";
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -28,5 +29,6 @@ export default createSchema({
     replySchema,
     articleSchema,
     youtubeSchema,
+    contactSchema,
   ]),
 });
