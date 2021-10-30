@@ -10,7 +10,7 @@ const videoSchema = {
     },
     {
       name: "excerpt",
-      type: "string",
+      type: "text",
       title: "Exerpt",
     },
     {
