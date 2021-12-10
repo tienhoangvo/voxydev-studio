@@ -16,27 +16,7 @@ const commentSchema = {
     {
       name: "user",
       title: "User",
-      type: "reference",
-      to: [
-        {
-          type: "user",
-        },
-      ],
-    },
-
-    {
-      name: "userData",
-      title: "User Data",
-      type: "object",
-      fields: [
-        { name: "id", title: "ID", type: "string" },
-        {
-          name: "name",
-          type: "string",
-          title: "Name",
-        },
-        { name: "avatar", title: "Avatar", type: "url" },
-      ],
+      type: "userSnippet",
     },
     {
       name: "article",
@@ -45,31 +25,6 @@ const commentSchema = {
       to: [
         {
           type: "article",
-        },
-      ],
-    },
-
-    {
-      title: "Approved",
-      name: "approved",
-      type: "boolean",
-      description: "Approve this comment?",
-    },
-
-    {
-      name: "replies",
-      title: "Replies",
-      type: "array",
-
-      of: [
-        {
-          type: "reference",
-          weak: true,
-          to: [
-            {
-              type: "reply",
-            },
-          ],
         },
       ],
     },

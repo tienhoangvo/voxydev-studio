@@ -20,42 +20,14 @@ const replySchema = {
       description: "Approve this comment?",
     },
     {
-      name: "userData",
-      title: "User Data",
-      type: "object",
-      fields: [
-        { name: "id", title: "ID", type: "string" },
-        {
-          name: "name",
-          type: "string",
-          title: "Name",
-        },
-        { name: "avatar", title: "Avatar", type: "url" },
-      ],
-    },
-    {
-      name: "repliedToUserData",
-      title: "Replied To User",
-      type: "object",
-      fields: [
-        { name: "id", title: "ID", type: "string" },
-        {
-          name: "name",
-          type: "string",
-          title: "Name",
-        },
-        { name: "avatar", title: "Avatar", type: "url" },
-      ],
-    },
-    {
       name: "user",
       title: "User",
-      type: "reference",
-      to: [
-        {
-          type: "user",
-        },
-      ],
+      type: "userSnippet",
+    },
+    {
+      name: "repliedToUser",
+      title: "Replied To User",
+      type: "userSnippet",
     },
     {
       name: "comment",

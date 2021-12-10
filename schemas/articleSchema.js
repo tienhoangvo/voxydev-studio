@@ -74,7 +74,7 @@ const articleSchema = {
         },
         {
           name: "exampleUsage",
-          title: "Example Usage",
+          title: "Code Snippet",
           type: "code",
           options: {
             withFilename: true,
@@ -147,23 +147,6 @@ const articleSchema = {
       options: {
         layout: "tags",
       },
-    },
-    {
-      name: "comments",
-      title: "Comments",
-      type: "array",
-
-      of: [
-        {
-          type: "reference",
-          weak: true,
-          to: [
-            {
-              type: "comment",
-            },
-          ],
-        },
-      ],
     },
 
     {

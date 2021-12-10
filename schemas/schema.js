@@ -14,6 +14,7 @@ import articleSchema from "./articleSchema";
 import youtubeSchema from "./youtubeSchema";
 import contactSchema from "./contactSchema";
 import socialMediaSchema from "./socialMediaSchema";
+import userSnippetSchema from "./userSnippetDataSchema";
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -24,6 +25,7 @@ export default createSchema({
   types: schemaTypes.concat([
     socialMediaSchema,
     authorSchema,
+    userSnippetSchema,
     categorySchema,
     videoSchema,
     userSchema,
