@@ -150,23 +150,6 @@ const articleSchema = {
     },
 
     {
-      name: "hearts",
-      title: "Hearts",
-      type: "array",
-      of: [
-        {
-          type: "reference",
-          weak: true,
-          to: [
-            {
-              type: "user",
-            },
-          ],
-        },
-      ],
-    },
-
-    {
       name: "heartsQuantity",
       title: "Hearts Quantity",
       type: "number",

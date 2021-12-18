@@ -36,6 +36,28 @@ const userSchema = {
       type: "string",
     },
     {
+      name: "favoriteArticlesQuantity",
+      title: "Favorite Articles Quantity",
+      type: "number",
+      initialValue: 0,
+    },
+    {
+      name: "favoriteArticles",
+      title: "Favorite Articles",
+      type: "array",
+      of: [
+        {
+          type: "reference",
+          weak: true,
+          to: [
+            {
+              type: "article",
+            },
+          ],
+        },
+      ],
+    },
+    {
       name: "status",
       title: "Status",
       type: "string",
