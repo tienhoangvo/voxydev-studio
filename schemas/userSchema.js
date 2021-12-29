@@ -1,7 +1,10 @@
+import { MdOutlinePerson as UserIcon } from "react-icons/md";
+
 const userSchema = {
   name: "user",
   title: "Users",
   type: "document",
+  icon: UserIcon,
   initialValue: {
     status: "active",
   },
@@ -11,6 +14,7 @@ const userSchema = {
       title: "Name",
       type: "string",
     },
+
     { name: "avatar", title: "Avatar", type: "url" },
     {
       name: "email",
@@ -77,6 +81,13 @@ const userSchema = {
       },
     },
   ],
+
+  preview: {
+    select: {
+      title: "name",
+      subtitle: "email",
+    },
+  },
 };
 
 export default userSchema;

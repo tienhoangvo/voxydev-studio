@@ -1,7 +1,9 @@
+import { MdOutlineFace as AuthorIcon } from "react-icons/md";
 const authorSchema = {
   name: "author",
   type: "document",
   title: "Authors",
+  icon: AuthorIcon,
   fields: [
     {
       name: "name",

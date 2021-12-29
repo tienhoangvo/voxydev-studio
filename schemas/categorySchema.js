@@ -1,7 +1,10 @@
+import { MdOutlineCategory as CategoryIcon } from "react-icons/md";
+
 const categorySchema = {
   name: "category",
   title: "Categories",
   type: "document",
+  icon: CategoryIcon,
   fields: [
     {
       name: "title",

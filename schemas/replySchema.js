@@ -1,7 +1,10 @@
+import { MdOutlineReply as ReplyIcon } from "react-icons/md";
+
 const replySchema = {
   name: "reply",
   title: "Replies",
   type: "document",
+  icon: ReplyIcon,
   fields: [
     {
       name: "content",
@@ -50,6 +53,12 @@ const replySchema = {
       ],
     },
   ],
+  preview: {
+    select: {
+      title: "content",
+      subtitle: "user.name",
+    },
+  },
 };
 
 export default replySchema;

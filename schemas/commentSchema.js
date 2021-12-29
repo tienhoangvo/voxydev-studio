@@ -1,7 +1,10 @@
+import { MdOutlineComment as CommentIcon } from "react-icons/md";
+
 const commentSchema = {
   name: "comment",
   type: "document",
   title: "Comments",
+  icon: CommentIcon,
   fields: [
     {
       name: "content",
@@ -36,6 +39,20 @@ const commentSchema = {
       initialValue: 0,
     },
   ],
+
+  preview: {
+    select: {
+      articleTitle: "article.title",
+      userName: "user.name",
+      createdAt: "createdAt",
+      repliesQuantity: "repliesQuantity",
+    },
+
+    prepare: (selection) => ({
+      title: selection.articleTitle,
+      subtitle: `${selection.userName} | ${selection.createdAt}`,
+    }),
+  },
 };
 
 export default commentSchema;

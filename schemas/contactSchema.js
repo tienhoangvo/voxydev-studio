@@ -1,8 +1,10 @@
+import { MdOutlineContactPage as ContactIcon } from "react-icons/md";
+
 const contactSchema = {
   name: "contact",
   title: "Contacts",
   type: "document",
-
+  icon: ContactIcon,
   fields: [
     {
       name: "name",

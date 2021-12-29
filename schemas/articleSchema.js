@@ -1,7 +1,10 @@
+import { MdOutlineArticle as ArticleIcon } from "react-icons/md";
+
 const articleSchema = {
   name: "article",
   type: "document",
   title: "Articles",
+  icon: ArticleIcon,
   fields: [
     {
       name: "title",
@@ -163,6 +166,13 @@ const articleSchema = {
       initialValue: 0,
     },
   ],
+  preview: {
+    select: {
+      title: "title",
+      subtitle: "author.name",
+      media: "imageCover",
+    },
+  },
 };
 
 export default articleSchema;
